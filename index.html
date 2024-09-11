@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Map</title>
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Esri JavaScript API -->
+  <script src="https://js.arcgis.com/4.21/"></script>
+
+  <!-- OpenLayers -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@6.12.0/ol.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@6.12.0/dist/ol.js"></script>
+
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Map Showcase</h1>
+  </header>
+
+  <main>
+    <section class="map-grid">
+      <div id="esriMap" class="map-container"></div>
+      <div id="openlayersMap" class="map-container"></div>
+      <div id="leafletMap" class="map-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Brian Otieno - Web Map Application</p>
+  </footer>
+
+  <!-- Load the script after the page loads -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
